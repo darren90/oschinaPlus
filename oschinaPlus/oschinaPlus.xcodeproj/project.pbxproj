@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE309E7D1C094E5A00B5FE0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309E7C1C094E5A00B5FE0D /* main.m */; };
+		FE309E801C094E5A00B5FE0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309E7F1C094E5A00B5FE0D /* AppDelegate.m */; };
+		FE309E831C094E5A00B5FE0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309E821C094E5A00B5FE0D /* ViewController.m */; };
+		FE309E861C094E5A00B5FE0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE309E841C094E5A00B5FE0D /* Main.storyboard */; };
+		FE309E881C094E5A00B5FE0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE309E871C094E5A00B5FE0D /* Assets.xcassets */; };
+		FE309E8B1C094E5A00B5FE0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE309E891C094E5A00B5FE0D /* LaunchScreen.storyboard */; };
+		FE309E961C094E5A00B5FE0D /* oschinaPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309E951C094E5A00B5FE0D /* oschinaPlusTests.m */; };
+		FE309EA11C094E5A00B5FE0D /* oschinaPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309EA01C094E5A00B5FE0D /* oschinaPlusUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE309E921C094E5A00B5FE0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE309E701C094E5A00B5FE0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE309E771C094E5A00B5FE0D;
+			remoteInfo = oschinaPlus;
+		};
+		FE309E9D1C094E5A00B5FE0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE309E701C094E5A00B5FE0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE309E771C094E5A00B5FE0D;
+			remoteInfo = oschinaPlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FE309E781C094E5A00B5FE0D /* oschinaPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oschinaPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE309E7C1C094E5A00B5FE0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE309E7E1C094E5A00B5FE0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FE309E7F1C094E5A00B5FE0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FE309E811C094E5A00B5FE0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FE309E821C094E5A00B5FE0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FE309E851C094E5A00B5FE0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE309E871C094E5A00B5FE0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE309E8A1C094E5A00B5FE0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FE309E8C1C094E5A00B5FE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE309E911C094E5A00B5FE0D /* oschinaPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oschinaPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE309E951C094E5A00B5FE0D /* oschinaPlusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oschinaPlusTests.m; sourceTree = "<group>"; };
+		FE309E971C094E5A00B5FE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE309E9C1C094E5A00B5FE0D /* oschinaPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oschinaPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE309EA01C094E5A00B5FE0D /* oschinaPlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oschinaPlusUITests.m; sourceTree = "<group>"; };
+		FE309EA21C094E5A00B5FE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE309E751C094E5A00B5FE0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE309E8E1C094E5A00B5FE0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE309E991C094E5A00B5FE0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE309E6F1C094E5A00B5FE0D = {
+			isa = PBXGroup;
+			children = (
+				FE309E7A1C094E5A00B5FE0D /* oschinaPlus */,
+				FE309E941C094E5A00B5FE0D /* oschinaPlusTests */,
+				FE309E9F1C094E5A00B5FE0D /* oschinaPlusUITests */,
+				FE309E791C094E5A00B5FE0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE309E791C094E5A00B5FE0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE309E781C094E5A00B5FE0D /* oschinaPlus.app */,
+				FE309E911C094E5A00B5FE0D /* oschinaPlusTests.xctest */,
+				FE309E9C1C094E5A00B5FE0D /* oschinaPlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE309E7A1C094E5A00B5FE0D /* oschinaPlus */ = {
+			isa = PBXGroup;
+			children = (
+				FE309E7E1C094E5A00B5FE0D /* AppDelegate.h */,
+				FE309E7F1C094E5A00B5FE0D /* AppDelegate.m */,
+				FE309E811C094E5A00B5FE0D /* ViewController.h */,
+				FE309E821C094E5A00B5FE0D /* ViewController.m */,
+				FE309E841C094E5A00B5FE0D /* Main.storyboard */,
+				FE309E871C094E5A00B5FE0D /* Assets.xcassets */,
+				FE309E891C094E5A00B5FE0D /* LaunchScreen.storyboard */,
+				FE309E8C1C094E5A00B5FE0D /* Info.plist */,
+				FE309E7B1C094E5A00B5FE0D /* Supporting Files */,
+			);
+			path = oschinaPlus;
+			sourceTree = "<group>";
+		};
+		FE309E7B1C094E5A00B5FE0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE309E7C1C094E5A00B5FE0D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE309E941C094E5A00B5FE0D /* oschinaPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE309E951C094E5A00B5FE0D /* oschinaPlusTests.m */,
+				FE309E971C094E5A00B5FE0D /* Info.plist */,
+			);
+			path = oschinaPlusTests;
+			sourceTree = "<group>";
+		};
+		FE309E9F1C094E5A00B5FE0D /* oschinaPlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FE309EA01C094E5A00B5FE0D /* oschinaPlusUITests.m */,
+				FE309EA21C094E5A00B5FE0D /* Info.plist */,
+			);
+			path = oschinaPlusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE309E771C094E5A00B5FE0D /* oschinaPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE309EA51C094E5A00B5FE0D /* Build configuration list for PBXNativeTarget "oschinaPlus" */;
+			buildPhases = (
+				FE309E741C094E5A00B5FE0D /* Sources */,
+				FE309E751C094E5A00B5FE0D /* Frameworks */,
+				FE309E761C094E5A00B5FE0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oschinaPlus;
+			productName = oschinaPlus;
+			productReference = FE309E781C094E5A00B5FE0D /* oschinaPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FE309E901C094E5A00B5FE0D /* oschinaPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE309EA81C094E5A00B5FE0D /* Build configuration list for PBXNativeTarget "oschinaPlusTests" */;
+			buildPhases = (
+				FE309E8D1C094E5A00B5FE0D /* Sources */,
+				FE309E8E1C094E5A00B5FE0D /* Frameworks */,
+				FE309E8F1C094E5A00B5FE0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE309E931C094E5A00B5FE0D /* PBXTargetDependency */,
+			);
+			name = oschinaPlusTests;
+			productName = oschinaPlusTests;
+			productReference = FE309E911C094E5A00B5FE0D /* oschinaPlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE309E9B1C094E5A00B5FE0D /* oschinaPlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE309EAB1C094E5A00B5FE0D /* Build configuration list for PBXNativeTarget "oschinaPlusUITests" */;
+			buildPhases = (
+				FE309E981C094E5A00B5FE0D /* Sources */,
+				FE309E991C094E5A00B5FE0D /* Frameworks */,
+				FE309E9A1C094E5A00B5FE0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE309E9E1C094E5A00B5FE0D /* PBXTargetDependency */,
+			);
+			name = oschinaPlusUITests;
+			productName = oschinaPlusUITests;
+			productReference = FE309E9C1C094E5A00B5FE0D /* oschinaPlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE309E701C094E5A00B5FE0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = tengfei;
+				TargetAttributes = {
+					FE309E771C094E5A00B5FE0D = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					FE309E901C094E5A00B5FE0D = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = FE309E771C094E5A00B5FE0D;
+					};
+					FE309E9B1C094E5A00B5FE0D = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = FE309E771C094E5A00B5FE0D;
+					};
+				};
+			};
+			buildConfigurationList = FE309E731C094E5A00B5FE0D /* Build configuration list for PBXProject "oschinaPlus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE309E6F1C094E5A00B5FE0D;
+			productRefGroup = FE309E791C094E5A00B5FE0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE309E771C094E5A00B5FE0D /* oschinaPlus */,
+				FE309E901C094E5A00B5FE0D /* oschinaPlusTests */,
+				FE309E9B1C094E5A00B5FE0D /* oschinaPlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE309E761C094E5A00B5FE0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE309E8B1C094E5A00B5FE0D /* LaunchScreen.storyboard in Resources */,
+				FE309E881C094E5A00B5FE0D /* Assets.xcassets in Resources */,
+				FE309E861C094E5A00B5FE0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE309E8F1C094E5A00B5FE0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE309E9A1C094E5A00B5FE0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE309E741C094E5A00B5FE0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE309E831C094E5A00B5FE0D /* ViewController.m in Sources */,
+				FE309E801C094E5A00B5FE0D /* AppDelegate.m in Sources */,
+				FE309E7D1C094E5A00B5FE0D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE309E8D1C094E5A00B5FE0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE309E961C094E5A00B5FE0D /* oschinaPlusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE309E981C094E5A00B5FE0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE309EA11C094E5A00B5FE0D /* oschinaPlusUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE309E931C094E5A00B5FE0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE309E771C094E5A00B5FE0D /* oschinaPlus */;
+			targetProxy = FE309E921C094E5A00B5FE0D /* PBXContainerItemProxy */;
+		};
+		FE309E9E1C094E5A00B5FE0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE309E771C094E5A00B5FE0D /* oschinaPlus */;
+			targetProxy = FE309E9D1C094E5A00B5FE0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FE309E841C094E5A00B5FE0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE309E851C094E5A00B5FE0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FE309E891C094E5A00B5FE0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE309E8A1C094E5A00B5FE0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE309EA31C094E5A00B5FE0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE309EA41C094E5A00B5FE0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE309EA61C094E5A00B5FE0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = oschinaPlus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.oschinaPlus.oschinaPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FE309EA71C094E5A00B5FE0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = oschinaPlus/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.oschinaPlus.oschinaPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FE309EA91C094E5A00B5FE0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = oschinaPlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.oschinaPlus.oschinaPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oschinaPlus.app/oschinaPlus";
+			};
+			name = Debug;
+		};
+		FE309EAA1C094E5A00B5FE0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = oschinaPlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.oschinaPlus.oschinaPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oschinaPlus.app/oschinaPlus";
+			};
+			name = Release;
+		};
+		FE309EAC1C094E5A00B5FE0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = oschinaPlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.oschinaPlus.oschinaPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = oschinaPlus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FE309EAD1C094E5A00B5FE0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = oschinaPlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.oschinaPlus.oschinaPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = oschinaPlus;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE309E731C094E5A00B5FE0D /* Build configuration list for PBXProject "oschinaPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE309EA31C094E5A00B5FE0D /* Debug */,
+				FE309EA41C094E5A00B5FE0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE309EA51C094E5A00B5FE0D /* Build configuration list for PBXNativeTarget "oschinaPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE309EA61C094E5A00B5FE0D /* Debug */,
+				FE309EA71C094E5A00B5FE0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE309EA81C094E5A00B5FE0D /* Build configuration list for PBXNativeTarget "oschinaPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE309EA91C094E5A00B5FE0D /* Debug */,
+				FE309EAA1C094E5A00B5FE0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FE309EAB1C094E5A00B5FE0D /* Build configuration list for PBXNativeTarget "oschinaPlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE309EAC1C094E5A00B5FE0D /* Debug */,
+				FE309EAD1C094E5A00B5FE0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE309E701C094E5A00B5FE0D /* Project object */;
+}
