@@ -51,6 +51,7 @@
 		FE309E9C1C094E5A00B5FE0D /* oschinaPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oschinaPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE309EA01C094E5A00B5FE0D /* oschinaPlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oschinaPlusUITests.m; sourceTree = "<group>"; };
 		FE309EA21C094E5A00B5FE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE309EAE1C094EE500B5FE0D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +102,13 @@
 		FE309E7A1C094E5A00B5FE0D /* oschinaPlus */ = {
 			isa = PBXGroup;
 			children = (
+				FE309EAE1C094EE500B5FE0D /* PrefixHeader.pch */,
 				FE309E7E1C094E5A00B5FE0D /* AppDelegate.h */,
 				FE309E7F1C094E5A00B5FE0D /* AppDelegate.m */,
 				FE309E811C094E5A00B5FE0D /* ViewController.h */,
 				FE309E821C094E5A00B5FE0D /* ViewController.m */,
 				FE309E841C094E5A00B5FE0D /* Main.storyboard */,
 				FE309E871C094E5A00B5FE0D /* Assets.xcassets */,
-				FE309E891C094E5A00B5FE0D /* LaunchScreen.storyboard */,
-				FE309E8C1C094E5A00B5FE0D /* Info.plist */,
 				FE309E7B1C094E5A00B5FE0D /* Supporting Files */,
 			);
 			path = oschinaPlus;
@@ -117,6 +117,8 @@
 		FE309E7B1C094E5A00B5FE0D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE309E891C094E5A00B5FE0D /* LaunchScreen.storyboard */,
+				FE309E8C1C094E5A00B5FE0D /* Info.plist */,
 				FE309E7C1C094E5A00B5FE0D /* main.m */,
 			);
 			name = "Supporting Files";
@@ -353,6 +355,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/oschinaPlus/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -395,6 +398,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/oschinaPlus/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
