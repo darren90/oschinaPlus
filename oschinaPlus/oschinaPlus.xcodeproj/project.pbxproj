@@ -15,6 +15,7 @@
 		FE309E8B1C094E5A00B5FE0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE309E891C094E5A00B5FE0D /* LaunchScreen.storyboard */; };
 		FE309E961C094E5A00B5FE0D /* oschinaPlusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309E951C094E5A00B5FE0D /* oschinaPlusTests.m */; };
 		FE309EA11C094E5A00B5FE0D /* oschinaPlusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309EA01C094E5A00B5FE0D /* oschinaPlusUITests.m */; };
+		FE309EC01C095C2400B5FE0D /* OAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309EBF1C095C2400B5FE0D /* OAuthController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		FE309EA01C094E5A00B5FE0D /* oschinaPlusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oschinaPlusUITests.m; sourceTree = "<group>"; };
 		FE309EA21C094E5A00B5FE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE309EAE1C094EE500B5FE0D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		FE309EBE1C095C2400B5FE0D /* OAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthController.h; sourceTree = "<group>"; };
+		FE309EBF1C095C2400B5FE0D /* OAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,7 @@
 				FE309E821C094E5A00B5FE0D /* ViewController.m */,
 				FE309E841C094E5A00B5FE0D /* Main.storyboard */,
 				FE309E871C094E5A00B5FE0D /* Assets.xcassets */,
+				FE309EAF1C095C0100B5FE0D /* Classes */,
 				FE309E7B1C094E5A00B5FE0D /* Supporting Files */,
 			);
 			path = oschinaPlus;
@@ -140,6 +144,127 @@
 				FE309EA21C094E5A00B5FE0D /* Info.plist */,
 			);
 			path = oschinaPlusUITests;
+			sourceTree = "<group>";
+		};
+		FE309EAF1C095C0100B5FE0D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FE309EB01C095C0100B5FE0D /* Home */,
+				FE309EB41C095C0100B5FE0D /* Main */,
+				FE309EB81C095C0100B5FE0D /* OAuth */,
+				FE309EBC1C095C0100B5FE0D /* Vender */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE309EB01C095C0100B5FE0D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FE309EB11C095C0100B5FE0D /* Controller */,
+				FE309EB21C095C0100B5FE0D /* Model */,
+				FE309EB31C095C0100B5FE0D /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FE309EB11C095C0100B5FE0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE309EB21C095C0100B5FE0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE309EB31C095C0100B5FE0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE309EB41C095C0100B5FE0D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FE309EB51C095C0100B5FE0D /* Controller */,
+				FE309EB61C095C0100B5FE0D /* Model */,
+				FE309EB71C095C0100B5FE0D /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FE309EB51C095C0100B5FE0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE309EB61C095C0100B5FE0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE309EB71C095C0100B5FE0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE309EB81C095C0100B5FE0D /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				FE309EB91C095C0100B5FE0D /* Controller */,
+				FE309EBA1C095C0100B5FE0D /* Model */,
+				FE309EBB1C095C0100B5FE0D /* View */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		FE309EB91C095C0100B5FE0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE309EBE1C095C2400B5FE0D /* OAuthController.h */,
+				FE309EBF1C095C2400B5FE0D /* OAuthController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE309EBA1C095C0100B5FE0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE309EBB1C095C0100B5FE0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE309EBC1C095C0100B5FE0D /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				FE309EBD1C095C0100B5FE0D /* Lib */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		FE309EBD1C095C0100B5FE0D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE309E831C094E5A00B5FE0D /* ViewController.m in Sources */,
+				FE309EC01C095C2400B5FE0D /* OAuthController.m in Sources */,
 				FE309E801C094E5A00B5FE0D /* AppDelegate.m in Sources */,
 				FE309E7D1C094E5A00B5FE0D /* main.m in Sources */,
 			);
