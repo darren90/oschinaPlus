@@ -20,6 +20,7 @@
 		FE309F061C0977BB00B5FE0D /* AFAppDotNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F011C0977BB00B5FE0D /* AFAppDotNetAPIClient.m */; };
 		FE309F071C0977BB00B5FE0D /* AFNTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F031C0977BB00B5FE0D /* AFNTool.m */; };
 		FE309F081C0977BB00B5FE0D /* NSString+NET.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F051C0977BB00B5FE0D /* NSString+NET.m */; };
+		FE309F0B1C0988DE00B5FE0D /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F0A1C0988DE00B5FE0D /* Account.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		FE309F031C0977BB00B5FE0D /* AFNTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNTool.m; sourceTree = "<group>"; };
 		FE309F041C0977BB00B5FE0D /* NSString+NET.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NET.h"; sourceTree = "<group>"; };
 		FE309F051C0977BB00B5FE0D /* NSString+NET.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NET.m"; sourceTree = "<group>"; };
+		FE309F091C0988DE00B5FE0D /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		FE309F0A1C0988DE00B5FE0D /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +277,8 @@
 		FE309EBA1C095C0100B5FE0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE309F091C0988DE00B5FE0D /* Account.h */,
+				FE309F0A1C0988DE00B5FE0D /* Account.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -488,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE309E831C094E5A00B5FE0D /* ViewController.m in Sources */,
+				FE309F0B1C0988DE00B5FE0D /* Account.m in Sources */,
 				FE309F081C0977BB00B5FE0D /* NSString+NET.m in Sources */,
 				FE309F071C0977BB00B5FE0D /* AFNTool.m in Sources */,
 				FE309EC01C095C2400B5FE0D /* OAuthController.m in Sources */,

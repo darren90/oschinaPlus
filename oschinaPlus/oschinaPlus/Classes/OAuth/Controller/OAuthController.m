@@ -64,7 +64,7 @@
 
 -(void)accessTokenWithCode:(NSString *)code
 {
-    NSString *url = @"https://api.weibo.com/oauth2/access_token";
+    NSString *url = [NSString getUrlWithPort:KToken];//@"http://www.oschina.net/action/openapi/token";
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     dict[@"client_id"] = KOSCAPPID;
     dict[@"client_secret"] = KOSCAPPKey;
@@ -72,9 +72,9 @@
     dict[@"code"] = code;
     dict[@"redirect_uri"] = KOSCRedirectUri;
     [AFNTool getWithURL:url  params:dict success:^(id json) {
-        NSLog(@"--j:%@",json);
+        NSLog(@"-sss-j:%@",json);
     } failure:^(NSError *error) {
-        
+          NSLog(@"-eee-j:%@",error);
     }];
 //
 //    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];

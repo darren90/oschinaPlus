@@ -25,9 +25,11 @@
 //http://www.oschina.net/action/oauth2/authorize?response_type=code&client_id=vAdtOo4xaeocczPzRBK8&redirect_uri=http://my.oschina.net/fengtengfei/blog
 
 #import "AFNTool.h"
+#import "NSString+NET.h"
 
-
-#define KURLPrefix @"http://www.oschina.net/action"
+//@"http://www.oschina.net/action/openapi/token";
+#define KURLPrefix @"http://www.oschina.net/action/openapi"
+#define KToken @"token"
 
 //随机色
 #define TFRandomColor     [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];

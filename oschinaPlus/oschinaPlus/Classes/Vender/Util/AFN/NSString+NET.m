@@ -14,7 +14,7 @@
 
 +(NSString *)getUrlWithPort:(NSString *)port
 {
-    return [NSString stringWithFormat:@"%@/%@/%@",KURLPrefix,@"data",port];
+    return [NSString stringWithFormat:@"%@/%@",KURLPrefix,port];
 }
 
 + (NSString*)deviceString
