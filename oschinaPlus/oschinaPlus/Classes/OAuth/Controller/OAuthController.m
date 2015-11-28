@@ -51,8 +51,11 @@
         int fromIndex = (int)(range.location +range.length);
         NSString *code = [url substringFromIndex:fromIndex];
         
-        //利用code换取accessToken；
-        [self accessTokenWithCode:code];
+        if ([code rangeOfString:@"&state="].location != NSNotFound) {
+            NSString *ccode = [[code componentsSeparatedByString:@"&state="] firstObject];
+            //利用code换取accessToken；
+            [self accessTokenWithCode:ccode];
+        }
         return NO;
     }
     return YES;
@@ -61,8 +64,19 @@
 
 -(void)accessTokenWithCode:(NSString *)code
 {
-//    NSString *url = @"https://api.weibo.com/oauth2/access_token";
-//    
+    NSString *url = @"https://api.weibo.com/oauth2/access_token";
+    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+    dict[@"client_id"] = KOSCAPPID;
+    dict[@"client_secret"] = KOSCAPPKey;
+    dict[@"grant_type"] = @"authorization_code";
+    dict[@"code"] = code;
+    dict[@"redirect_uri"] = KOSCRedirectUri;
+    [AFNTool getWithURL:url  params:dict success:^(id json) {
+        NSLog(@"--j:%@",json);
+    } failure:^(NSError *error) {
+        
+    }];
+//
 //    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
 //    mgr.responseSerializer = [AFJSONResponseSerializer serializer];
 //    NSMutableDictionary *dict = [NSMutableDictionary dictionary];
