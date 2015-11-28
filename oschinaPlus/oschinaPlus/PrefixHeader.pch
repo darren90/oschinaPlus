@@ -12,7 +12,14 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-
+//应用ID	vAdtOo4xaeocczPzRBK8
+//应用私钥	XMNbCC0CYSv7qpdJoMQXwzHUxmCHECOH重置
+//应用首页	http://my.oschina.net/fengtengfei/blog
+//回调地址	http://my.oschina.net/fengtengfei/blog
+#define KOSCAPPID  @"vAdtOo4xaeocczPzRBK8"
+#define KOSCAPPKey  @"XMNbCC0CYSv7qpdJoMQXwzHUxmCHECOH"
+#define KOSCAPPHomePage  @"http://my.oschina.net/fengtengfei/blog"
+#define KOSCRedirectUri  @"http://my.oschina.net/fengtengfei/blog"
 
 
 //http://www.oschina.net/action/oauth2/authorize?response_type=code&client_id=vAdtOo4xaeocczPzRBK8&redirect_uri=http://my.oschina.net/fengtengfei/blog
