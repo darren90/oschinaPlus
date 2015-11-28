@@ -12,6 +12,14 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+
+//@"http://www.oschina.net/action/openapi/token";
+#define KURLPrefix          @"http://www.oschina.net/action/openapi"
+#define KToken              @"token"
+#define KNews               @"news_list"
+#define KNew_Detail         @"news_detail"
+
+
 //应用ID	vAdtOo4xaeocczPzRBK8
 //应用私钥	XMNbCC0CYSv7qpdJoMQXwzHUxmCHECOH重置
 //应用首页	http://my.oschina.net/fengtengfei/blog
@@ -21,17 +29,23 @@
 #define KOSCAPPHomePage  @"http://my.oschina.net/fengtengfei/blog"
 #define KOSCRedirectUri  @"http://my.oschina.net/fengtengfei/blog"
 
+
+//
+//1:腾讯bugly
+#define KBuglyAPPID @"900013928"
+#define KBuglyAPPKey @"9wj9tjFAhS41ljKy"
+
+//2.友盟
+#define KUmegnAppKey    @"5659a606e0f55a58a000467f"
+
+
 #import "AFNTool.h"
 #import "NSString+NET.h"
 #import <MJExtension.h>
 #import <MJRefresh.h>
+#import <TOWebViewController.h>
 
 
-
-//@"http://www.oschina.net/action/openapi/token";
-#define KURLPrefix @"http://www.oschina.net/action/openapi"
-#define KToken @"token"
-#define KNews @"news_list"
 
 //随机色
 #define TFRandomColor     [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0];

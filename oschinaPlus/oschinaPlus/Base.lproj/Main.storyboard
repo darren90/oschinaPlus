@@ -53,10 +53,33 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="yrG-dj-FF8"/>
+                    <connections>
+                        <segue destination="Gtt-3U-Kph" kind="push" identifier="newsdetail" id="fhP-Yo-qYE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDu-5h-Qm6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="289" y="-146"/>
+        </scene>
+        <!--News Detail Controller-->
+        <scene sceneID="K3q-dn-DBO">
+            <objects>
+                <viewController id="Gtt-3U-Kph" customClass="NewsDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H3z-6P-hga"/>
+                        <viewControllerLayoutGuide type="bottom" id="hg6-Vd-nNR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BMi-vR-uMc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TiZ-e6-pBH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cmh-hV-qUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="-146"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="vg6-fU-ebO">

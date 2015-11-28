@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AD652B858AD27042DEE2F789"
+               BlueprintIdentifier = "D3A5E14C6088C20C4E193323"
                BuildableName = "libPods-oschinaPlus.a"
                BlueprintName = "Pods-oschinaPlus"
                ReferencedContainer = "container:Pods.xcodeproj">

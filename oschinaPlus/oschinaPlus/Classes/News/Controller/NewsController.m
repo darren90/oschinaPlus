@@ -10,6 +10,7 @@
 #import "NewsModel.h"
 #import "ContentModel.h"
 #import "NewsCell.h"
+#import "NewsDetailController.h"
 
 @interface NewsController ()
 
@@ -72,14 +73,22 @@
     return self.dataArray.count;
 }
 
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NewsCell *cell = [NewsCell cellWithTableView:tableView];
     cell.model = self.dataArray[indexPath.row];
     return cell;
 }
- 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ContentModel *model = self.dataArray[indexPath.row];
+    NewsDetailController *detailVc = [[NewsDetailController alloc]init];
+    detailVc.news_id = model.ID;//[model.ID intValue];
+    [self.navigationController pushViewController:detailVc animated:YES];
+//    [self performSegueWithIdentifier:@"newsdetail" sender:nil];
+}
+
+
 
 -(NSMutableArray *)dataArray
 {

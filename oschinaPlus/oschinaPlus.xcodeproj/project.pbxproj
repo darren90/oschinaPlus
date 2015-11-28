@@ -27,6 +27,7 @@
 		FE309F271C09A18D00B5FE0D /* NoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F261C09A18D00B5FE0D /* NoticeModel.m */; };
 		FE309F2B1C09A39300B5FE0D /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F291C09A39300B5FE0D /* NewsCell.m */; };
 		FE309F2C1C09A39300B5FE0D /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE309F2A1C09A39300B5FE0D /* NewsCell.xib */; };
+		FE309F2F1C09E73300B5FE0D /* NewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F2E1C09E73300B5FE0D /* NewsDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		FE309F281C09A39300B5FE0D /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
 		FE309F291C09A39300B5FE0D /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
 		FE309F2A1C09A39300B5FE0D /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		FE309F2D1C09E73300B5FE0D /* NewsDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetailController.h; sourceTree = "<group>"; };
+		FE309F2E1C09E73300B5FE0D /* NewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +459,8 @@
 			children = (
 				FE309F1C1C098CC100B5FE0D /* NewsController.h */,
 				FE309F1D1C098CC100B5FE0D /* NewsController.m */,
+				FE309F2D1C09E73300B5FE0D /* NewsDetailController.h */,
+				FE309F2E1C09E73300B5FE0D /* NewsDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -652,6 +657,7 @@
 				FE309F211C0998D800B5FE0D /* NewsModel.m in Sources */,
 				FE309E831C094E5A00B5FE0D /* ViewController.m in Sources */,
 				FE309F0B1C0988DE00B5FE0D /* Account.m in Sources */,
+				FE309F2F1C09E73300B5FE0D /* NewsDetailController.m in Sources */,
 				FE309F271C09A18D00B5FE0D /* NoticeModel.m in Sources */,
 				FE309F081C0977BB00B5FE0D /* NSString+NET.m in Sources */,
 				FE309F071C0977BB00B5FE0D /* AFNTool.m in Sources */,
