@@ -22,6 +22,11 @@
 		FE309F081C0977BB00B5FE0D /* NSString+NET.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F051C0977BB00B5FE0D /* NSString+NET.m */; };
 		FE309F0B1C0988DE00B5FE0D /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F0A1C0988DE00B5FE0D /* Account.m */; };
 		FE309F1E1C098CC100B5FE0D /* NewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F1D1C098CC100B5FE0D /* NewsController.m */; };
+		FE309F211C0998D800B5FE0D /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F201C0998D800B5FE0D /* NewsModel.m */; };
+		FE309F241C0999AC00B5FE0D /* ContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F231C0999AC00B5FE0D /* ContentModel.m */; };
+		FE309F271C09A18D00B5FE0D /* NoticeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F261C09A18D00B5FE0D /* NoticeModel.m */; };
+		FE309F2B1C09A39300B5FE0D /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F291C09A39300B5FE0D /* NewsCell.m */; };
+		FE309F2C1C09A39300B5FE0D /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE309F2A1C09A39300B5FE0D /* NewsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +79,15 @@
 		FE309F0A1C0988DE00B5FE0D /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		FE309F1C1C098CC100B5FE0D /* NewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsController.h; sourceTree = "<group>"; };
 		FE309F1D1C098CC100B5FE0D /* NewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsController.m; sourceTree = "<group>"; };
+		FE309F1F1C0998D800B5FE0D /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		FE309F201C0998D800B5FE0D /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
+		FE309F221C0999AC00B5FE0D /* ContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentModel.h; sourceTree = "<group>"; };
+		FE309F231C0999AC00B5FE0D /* ContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentModel.m; sourceTree = "<group>"; };
+		FE309F251C09A18D00B5FE0D /* NoticeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeModel.h; sourceTree = "<group>"; };
+		FE309F261C09A18D00B5FE0D /* NoticeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeModel.m; sourceTree = "<group>"; };
+		FE309F281C09A39300B5FE0D /* NewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsCell.h; sourceTree = "<group>"; };
+		FE309F291C09A39300B5FE0D /* NewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsCell.m; sourceTree = "<group>"; };
+		FE309F2A1C09A39300B5FE0D /* NewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -449,6 +463,12 @@
 		FE309F1A1C098CAA00B5FE0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE309F1F1C0998D800B5FE0D /* NewsModel.h */,
+				FE309F201C0998D800B5FE0D /* NewsModel.m */,
+				FE309F221C0999AC00B5FE0D /* ContentModel.h */,
+				FE309F231C0999AC00B5FE0D /* ContentModel.m */,
+				FE309F251C09A18D00B5FE0D /* NoticeModel.h */,
+				FE309F261C09A18D00B5FE0D /* NoticeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -456,6 +476,9 @@
 		FE309F1B1C098CAA00B5FE0D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE309F281C09A39300B5FE0D /* NewsCell.h */,
+				FE309F291C09A39300B5FE0D /* NewsCell.m */,
+				FE309F2A1C09A39300B5FE0D /* NewsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -566,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE309E8B1C094E5A00B5FE0D /* LaunchScreen.storyboard in Resources */,
+				FE309F2C1C09A39300B5FE0D /* NewsCell.xib in Resources */,
 				FE309E881C094E5A00B5FE0D /* Assets.xcassets in Resources */,
 				FE309E861C094E5A00B5FE0D /* Main.storyboard in Resources */,
 			);
@@ -625,14 +649,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE309F211C0998D800B5FE0D /* NewsModel.m in Sources */,
 				FE309E831C094E5A00B5FE0D /* ViewController.m in Sources */,
 				FE309F0B1C0988DE00B5FE0D /* Account.m in Sources */,
+				FE309F271C09A18D00B5FE0D /* NoticeModel.m in Sources */,
 				FE309F081C0977BB00B5FE0D /* NSString+NET.m in Sources */,
 				FE309F071C0977BB00B5FE0D /* AFNTool.m in Sources */,
+				FE309F2B1C09A39300B5FE0D /* NewsCell.m in Sources */,
 				FE309F1E1C098CC100B5FE0D /* NewsController.m in Sources */,
 				FE309EC01C095C2400B5FE0D /* OAuthController.m in Sources */,
 				FE309E801C094E5A00B5FE0D /* AppDelegate.m in Sources */,
 				FE309F061C0977BB00B5FE0D /* AFAppDotNetAPIClient.m in Sources */,
+				FE309F241C0999AC00B5FE0D /* ContentModel.m in Sources */,
 				FE309E7D1C094E5A00B5FE0D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

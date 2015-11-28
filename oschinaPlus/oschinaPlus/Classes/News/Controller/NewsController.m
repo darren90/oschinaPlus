@@ -7,8 +7,13 @@
 //
 
 #import "NewsController.h"
+#import "NewsModel.h"
+#import "ContentModel.h"
+#import "NewsCell.h"
 
 @interface NewsController ()
+
+@property (nonatomic,strong)NSMutableArray * dataArray;
 
 @end
 
@@ -22,6 +27,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.rowHeight = 60;
     [self initData];
 }
 
@@ -43,6 +49,9 @@
     
     [AFNTool getWithURL:[NSString getUrlWithPort:KNews] params:params success:^(id json) {
         NSLog(@"--j:%@",json);
+        NewsModel *news = [NewsModel mj_objectWithKeyValues:json];
+        [self.dataArray addObjectsFromArray:news.newslist];
+        [self.tableView reloadData];
     } failure:^(NSError *error) {
         NSLog(@"--eee:%@",error);
     }];
@@ -54,26 +63,31 @@
 }
 
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
+//
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    return 0;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.dataArray.count;
 }
 
-/*
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    NewsCell *cell = [NewsCell cellWithTableView:tableView];
+    cell.model = self.dataArray[indexPath.row];
     return cell;
 }
-*/
+ 
+
+-(NSMutableArray *)dataArray
+{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
 
 /*
 // Override to support conditional editing of the table view.

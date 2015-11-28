@@ -21,11 +21,12 @@
 #define KOSCAPPHomePage  @"http://my.oschina.net/fengtengfei/blog"
 #define KOSCRedirectUri  @"http://my.oschina.net/fengtengfei/blog"
 
-
-//http://www.oschina.net/action/oauth2/authorize?response_type=code&client_id=vAdtOo4xaeocczPzRBK8&redirect_uri=http://my.oschina.net/fengtengfei/blog
-
 #import "AFNTool.h"
 #import "NSString+NET.h"
+#import <MJExtension.h>
+#import <MJRefresh.h>
+
+
 
 //@"http://www.oschina.net/action/openapi/token";
 #define KURLPrefix @"http://www.oschina.net/action/openapi"
