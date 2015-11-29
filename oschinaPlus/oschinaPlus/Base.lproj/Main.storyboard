@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-782" y="620"/>
         </scene>
-        <!--Root View Controller-->
+        <!--新闻-->
         <scene sceneID="hPj-Mh-dxJ">
             <objects>
                 <tableViewController id="a1F-mt-fgV" customClass="NewsController" sceneMemberID="viewController">
@@ -52,7 +52,7 @@
                             <outlet property="delegate" destination="a1F-mt-fgV" id="SFO-3u-fs1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="yrG-dj-FF8"/>
+                    <navigationItem key="navigationItem" title="新闻" id="yrG-dj-FF8"/>
                     <connections>
                         <segue destination="Gtt-3U-Kph" kind="push" identifier="newsdetail" id="fhP-Yo-qYE"/>
                     </connections>
