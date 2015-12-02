@@ -37,7 +37,7 @@
         }
    
     } failure:^(NSError *error) {
-        NSLog(@"--eee:%@",error);
+        
     }];
 }
 
