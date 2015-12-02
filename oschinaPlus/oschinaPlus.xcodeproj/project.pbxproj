@@ -30,6 +30,10 @@
 		FE309F2F1C09E73300B5FE0D /* NewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F2E1C09E73300B5FE0D /* NewsDetailController.m */; };
 		FE309F321C0B17BC00B5FE0D /* MeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F311C0B17BC00B5FE0D /* MeController.m */; };
 		FE309F351C0F388B00B5FE0D /* BBSController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F341C0F388B00B5FE0D /* BBSController.m */; };
+		FE309F381C0F3AB800B5FE0D /* PostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F371C0F3AB800B5FE0D /* PostModel.m */; };
+		FE309F3B1C0F3AD100B5FE0D /* PostContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F3A1C0F3AD100B5FE0D /* PostContentModel.m */; };
+		FE309F3F1C0F431600B5FE0D /* PosterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F3D1C0F431600B5FE0D /* PosterCell.m */; };
+		FE309F401C0F431600B5FE0D /* PosterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE309F3E1C0F431600B5FE0D /* PosterCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,13 @@
 		FE309F311C0B17BC00B5FE0D /* MeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeController.m; sourceTree = "<group>"; };
 		FE309F331C0F388B00B5FE0D /* BBSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSController.h; sourceTree = "<group>"; };
 		FE309F341C0F388B00B5FE0D /* BBSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSController.m; sourceTree = "<group>"; };
+		FE309F361C0F3AB800B5FE0D /* PostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostModel.h; sourceTree = "<group>"; };
+		FE309F371C0F3AB800B5FE0D /* PostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostModel.m; sourceTree = "<group>"; };
+		FE309F391C0F3AD100B5FE0D /* PostContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostContentModel.h; sourceTree = "<group>"; };
+		FE309F3A1C0F3AD100B5FE0D /* PostContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostContentModel.m; sourceTree = "<group>"; };
+		FE309F3C1C0F431600B5FE0D /* PosterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterCell.h; sourceTree = "<group>"; };
+		FE309F3D1C0F431600B5FE0D /* PosterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterCell.m; sourceTree = "<group>"; };
+		FE309F3E1C0F431600B5FE0D /* PosterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PosterCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +390,10 @@
 		FE309F0E1C098CAA00B5FE0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE309F361C0F3AB800B5FE0D /* PostModel.h */,
+				FE309F371C0F3AB800B5FE0D /* PostModel.m */,
+				FE309F391C0F3AD100B5FE0D /* PostContentModel.h */,
+				FE309F3A1C0F3AD100B5FE0D /* PostContentModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -386,6 +401,9 @@
 		FE309F0F1C098CAA00B5FE0D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE309F3C1C0F431600B5FE0D /* PosterCell.h */,
+				FE309F3D1C0F431600B5FE0D /* PosterCell.m */,
+				FE309F3E1C0F431600B5FE0D /* PosterCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -606,6 +624,7 @@
 				FE309E8B1C094E5A00B5FE0D /* LaunchScreen.storyboard in Resources */,
 				FE309F2C1C09A39300B5FE0D /* NewsCell.xib in Resources */,
 				FE309E881C094E5A00B5FE0D /* Assets.xcassets in Resources */,
+				FE309F401C0F431600B5FE0D /* PosterCell.xib in Resources */,
 				FE309E861C094E5A00B5FE0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -673,10 +692,13 @@
 				FE309F271C09A18D00B5FE0D /* NoticeModel.m in Sources */,
 				FE309F081C0977BB00B5FE0D /* NSString+NET.m in Sources */,
 				FE309F071C0977BB00B5FE0D /* AFNTool.m in Sources */,
+				FE309F3B1C0F3AD100B5FE0D /* PostContentModel.m in Sources */,
 				FE309F2B1C09A39300B5FE0D /* NewsCell.m in Sources */,
 				FE309F1E1C098CC100B5FE0D /* NewsController.m in Sources */,
 				FE309EC01C095C2400B5FE0D /* OAuthController.m in Sources */,
+				FE309F3F1C0F431600B5FE0D /* PosterCell.m in Sources */,
 				FE309E801C094E5A00B5FE0D /* AppDelegate.m in Sources */,
+				FE309F381C0F3AB800B5FE0D /* PostModel.m in Sources */,
 				FE309F061C0977BB00B5FE0D /* AFAppDotNetAPIClient.m in Sources */,
 				FE309F241C0999AC00B5FE0D /* ContentModel.m in Sources */,
 				FE309E7D1C094E5A00B5FE0D /* main.m in Sources */,

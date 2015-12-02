@@ -7,8 +7,11 @@
 //
 
 #import "BBSController.h"
+#import "PostModel.h"
+#import "PostContentModel.h"
 
 @interface BBSController ()
+@property (nonatomic,strong)NSMutableArray * dataArray;
 
 @end
 
@@ -43,11 +46,11 @@
     params[@"pageSize"] = @(20);
     params[@"dataType"] = @"json";
     
-    [AFNTool getWithURL:[NSString getUrlWithPort:KNews] params:params success:^(id json) {
-        NSLog(@"--j:%@",json);
-//        NewsModel *news = [NewsModel mj_objectWithKeyValues:json];
-//        [self.dataArray addObjectsFromArray:news.newslist];
-//        [self.tableView reloadData];
+    [AFNTool getWithURL:[NSString getUrlWithPort:KBBS] params:params success:^(id json) {
+//        NSLog(@"--j:%@",json);
+        PostModel *poster = [PostModel mj_objectWithKeyValues:json];
+        [self.dataArray addObjectsFromArray:poster.post_list];
+        [self.tableView reloadData];
     } failure:^(NSError *error) {
         NSLog(@"--eee:%@",error);
     }];
@@ -60,25 +63,34 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    return 0;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return self.dataArray.count;
 }
 
-/*
+
+
+-(NSMutableArray *)dataArray
+{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
+}
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"sdf"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"sdf"];
+    }
     
     return cell;
 }
-*/
+ 
 
 /*
 // Override to support conditional editing of the table view.

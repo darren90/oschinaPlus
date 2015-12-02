@@ -34,7 +34,7 @@
  */
 
 /**
-*  新闻列表
+*  新闻列表 - 存放的是ContentModel
 */
 @property (nonatomic,strong)NSArray * newslist;
 
