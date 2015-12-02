@@ -18,6 +18,7 @@
 #define KToken              @"token"
 #define KNews               @"news_list"
 #define KNew_Detail         @"news_detail"
+#define KBBS                @"post_list"
 
 
 //应用ID	vAdtOo4xaeocczPzRBK8

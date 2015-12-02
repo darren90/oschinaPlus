@@ -29,6 +29,7 @@
 		FE309F2C1C09A39300B5FE0D /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE309F2A1C09A39300B5FE0D /* NewsCell.xib */; };
 		FE309F2F1C09E73300B5FE0D /* NewsDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F2E1C09E73300B5FE0D /* NewsDetailController.m */; };
 		FE309F321C0B17BC00B5FE0D /* MeController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F311C0B17BC00B5FE0D /* MeController.m */; };
+		FE309F351C0F388B00B5FE0D /* BBSController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F341C0F388B00B5FE0D /* BBSController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,8 @@
 		FE309F2E1C09E73300B5FE0D /* NewsDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetailController.m; sourceTree = "<group>"; };
 		FE309F301C0B17BC00B5FE0D /* MeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeController.h; sourceTree = "<group>"; };
 		FE309F311C0B17BC00B5FE0D /* MeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeController.m; sourceTree = "<group>"; };
+		FE309F331C0F388B00B5FE0D /* BBSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSController.h; sourceTree = "<group>"; };
+		FE309F341C0F388B00B5FE0D /* BBSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +370,8 @@
 		FE309F0D1C098CAA00B5FE0D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FE309F331C0F388B00B5FE0D /* BBSController.h */,
+				FE309F341C0F388B00B5FE0D /* BBSController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -664,6 +669,7 @@
 				FE309E831C094E5A00B5FE0D /* ViewController.m in Sources */,
 				FE309F0B1C0988DE00B5FE0D /* Account.m in Sources */,
 				FE309F2F1C09E73300B5FE0D /* NewsDetailController.m in Sources */,
+				FE309F351C0F388B00B5FE0D /* BBSController.m in Sources */,
 				FE309F271C09A18D00B5FE0D /* NoticeModel.m in Sources */,
 				FE309F081C0977BB00B5FE0D /* NSString+NET.m in Sources */,
 				FE309F071C0977BB00B5FE0D /* AFNTool.m in Sources */,

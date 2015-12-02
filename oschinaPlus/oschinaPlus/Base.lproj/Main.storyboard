@@ -84,7 +84,7 @@
         <!--Root View Controller-->
         <scene sceneID="vg6-fU-ebO">
             <objects>
-                <tableViewController id="M1K-ev-Hak" sceneMemberID="viewController">
+                <tableViewController id="M1K-ev-Hak" customClass="BBSController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="f8h-p6-ju5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +111,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ygc-rm-yfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="505"/>
+            <point key="canvasLocation" x="289" y="508"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="S4L-CA-T3L">
