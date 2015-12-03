@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class AnswerModel;
 @interface PostContentModel : NSObject
 //"id": 82977,
 //"author": "彭博",
@@ -65,6 +66,12 @@
  *  浏览数
  */
 @property (nonatomic,copy)NSString * viewCount;
+
+/**
+ *  AnswerModel
+ */
+@property (nonatomic,strong)AnswerModel * answer;
+
 
 
 ///**

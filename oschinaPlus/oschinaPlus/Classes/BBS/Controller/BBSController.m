@@ -47,7 +47,7 @@
     params[@"dataType"] = @"json";
     
     [AFNTool getWithURL:[NSString getUrlWithPort:KBBS] params:params success:^(id json) {
-//        NSLog(@"--j:%@",json);
+        NSLog(@"--j:%@",json);
         PostModel *poster = [PostModel mj_objectWithKeyValues:json];
         [self.dataArray addObjectsFromArray:poster.post_list];
         [self.tableView reloadData];

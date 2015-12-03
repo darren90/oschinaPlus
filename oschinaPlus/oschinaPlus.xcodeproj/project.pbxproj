@@ -34,6 +34,7 @@
 		FE309F3B1C0F3AD100B5FE0D /* PostContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F3A1C0F3AD100B5FE0D /* PostContentModel.m */; };
 		FE309F3F1C0F431600B5FE0D /* PosterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F3D1C0F431600B5FE0D /* PosterCell.m */; };
 		FE309F401C0F431600B5FE0D /* PosterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE309F3E1C0F431600B5FE0D /* PosterCell.xib */; };
+		FE309F431C108A7200B5FE0D /* AnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F421C108A7200B5FE0D /* AnswerModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,8 @@
 		FE309F3C1C0F431600B5FE0D /* PosterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterCell.h; sourceTree = "<group>"; };
 		FE309F3D1C0F431600B5FE0D /* PosterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterCell.m; sourceTree = "<group>"; };
 		FE309F3E1C0F431600B5FE0D /* PosterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PosterCell.xib; sourceTree = "<group>"; };
+		FE309F411C108A7100B5FE0D /* AnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerModel.h; sourceTree = "<group>"; };
+		FE309F421C108A7200B5FE0D /* AnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -394,6 +397,8 @@
 				FE309F371C0F3AB800B5FE0D /* PostModel.m */,
 				FE309F391C0F3AD100B5FE0D /* PostContentModel.h */,
 				FE309F3A1C0F3AD100B5FE0D /* PostContentModel.m */,
+				FE309F411C108A7100B5FE0D /* AnswerModel.h */,
+				FE309F421C108A7200B5FE0D /* AnswerModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -688,6 +693,7 @@
 				FE309E831C094E5A00B5FE0D /* ViewController.m in Sources */,
 				FE309F0B1C0988DE00B5FE0D /* Account.m in Sources */,
 				FE309F2F1C09E73300B5FE0D /* NewsDetailController.m in Sources */,
+				FE309F431C108A7200B5FE0D /* AnswerModel.m in Sources */,
 				FE309F351C0F388B00B5FE0D /* BBSController.m in Sources */,
 				FE309F271C09A18D00B5FE0D /* NoticeModel.m in Sources */,
 				FE309F081C0977BB00B5FE0D /* NSString+NET.m in Sources */,
