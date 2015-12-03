@@ -7,6 +7,7 @@
 //
 
 #import "PosterCell.h"
+#import "PostContentModel.h"
 
 @implementation PosterCell
 
@@ -25,6 +26,18 @@
     // Initialization code
 }
 
+-(void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    
+}
+
+
+-(void)setModel:(PostContentModel *)model
+{
+    _model = model;
+}
  
 
 @end

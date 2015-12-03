@@ -9,6 +9,7 @@
 #import "BBSController.h"
 #import "PostModel.h"
 #import "PostContentModel.h"
+#import "PosterCell.h"
 
 @interface BBSController ()
 @property (nonatomic,strong)NSMutableArray * dataArray;
@@ -72,6 +73,13 @@
 }
 
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    PosterCell *cell = [PosterCell cellWithTableView:tableView];
+    cell.model = self.dataArray[indexPath.row];
+    
+    return cell;
+}
+
 
 -(NSMutableArray *)dataArray
 {
@@ -82,15 +90,6 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"sdf"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"sdf"];
-    }
-    
-    return cell;
-}
- 
 
 /*
 // Override to support conditional editing of the table view.

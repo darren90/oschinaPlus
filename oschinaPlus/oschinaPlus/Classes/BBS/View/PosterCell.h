@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class PostContentModel;
 @interface PosterCell : UITableViewCell
 
 +(instancetype)cellWithTableView:(UITableView *)tableView;
+
+
+@property (nonatomic,strong)PostContentModel * model;
 
 @end

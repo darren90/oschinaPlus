@@ -66,7 +66,6 @@
  *  浏览数
  */
 @property (nonatomic,copy)NSString * viewCount;
-
 /**
  *  AnswerModel
  */
