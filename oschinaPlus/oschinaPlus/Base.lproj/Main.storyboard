@@ -137,38 +137,6 @@
             <point key="canvasLocation" x="738" y="517"/>
         </scene>
         <!--Root View Controller-->
-        <scene sceneID="S4L-CA-T3L">
-            <objects>
-                <tableViewController id="f2t-JO-KpK" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zMk-xh-aeX">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9GH-Jh-OFu">
-                                <rect key="frame" x="0.0" y="92" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9GH-Jh-OFu" id="WjN-LH-nqZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                </tableViewCellContentView>
-                                <animations/>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="f2t-JO-KpK" id="edf-M7-7lz"/>
-                            <outlet property="delegate" destination="f2t-JO-KpK" id="JEm-mg-4RZ"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="HUh-uj-xd2"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H4q-jU-aPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="212" y="1135"/>
-        </scene>
-        <!--Root View Controller-->
         <scene sceneID="aaj-If-CRN">
             <objects>
                 <tableViewController id="mCC-nv-2hy" sceneMemberID="viewController">
@@ -229,12 +197,32 @@
                         <animations/>
                     </navigationBar>
                     <connections>
-                        <segue destination="f2t-JO-KpK" kind="relationship" relationship="rootViewController" id="QC9-Zu-he8"/>
+                        <segue destination="kF8-Ez-Lbz" kind="relationship" relationship="rootViewController" id="7G4-9K-UJq"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kq0-mg-Kdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-264" y="1159"/>
+        </scene>
+        <!--博客-->
+        <scene sceneID="8sl-7v-VDY">
+            <objects>
+                <viewController id="kF8-Ez-Lbz" customClass="BlogController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eFu-yU-aiQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wdo-4h-EdA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RpL-RU-xlX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="博客" id="ZHk-lf-E3L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o15-ID-bba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289" y="1159"/>
         </scene>
         <!--论坛-->
         <scene sceneID="t4C-mV-B4d">

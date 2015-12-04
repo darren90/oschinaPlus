@@ -1,44 +1,58 @@
 //
-//  BBSDetailController.m
+//  BlogController.m
 //  oschinaPlus
 //
 //  Created by Tengfei on 15/12/4.
 //  Copyright © 2015年 tengfei. All rights reserved.
 //
 
-#import "BBSDetailController.h"
-#import "PosterDetailModel.h"
+#import "BlogController.h"
 
-@interface BBSDetailController ()
+@interface BlogController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic,weak)UITableView * tableView;
 
 @end
 
-@implementation BBSDetailController
+@implementation BlogController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [self initTableView];
     [self initData];
 }
 
 -(void)initData
 {
-//    id	true	string	帖子ID	0
-//    access_token	true	string	oauth2_token获取的access_token 传则显示是否收藏
+//    access_token	true	string	oauth2_token获取的access_token
+//    page/pageIndex	true	int	页数	1
+//    pageSize	true	int	每页条数	20
 //    dataType	true	string	返回数据类型['json'|'jsonp'|'xml']	json
+    
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = @"1fe2defc-c009-4f06-bfce-03ef5c9389a7";
-    params[@"id"] = self.poster_id;
+    params[@"page"] = @(1);
+    params[@"pageSize"] = @(20);
     params[@"dataType"] = @"json";
     
-    [AFNTool getWithURL:[NSString getUrlWithPort:KBBS_Detail] params:params success:^(id json) {
-            NSLog(@"--j:%@",json);
-        PosterDetailModel *model = [PosterDetailModel mj_objectWithKeyValues:json];
-        NSLog(@"--nmm:%@",model);
+    [AFNTool getWithURL:[NSString getUrlWithPort:KBlog_Detail] params:params success:^(id json) {
+        NSLog(@"--j:%@",json);
+//        PosterDetailModel *model = [PosterDetailModel mj_objectWithKeyValues:json];
+//        NSLog(@"--nmm:%@",model);
     } failure:^(NSError *error) {
         NSLog(@"--eee:%@",error);
     }];
+}
+
+-(void)initTableView
+{
+    UITableView *tableView = [[UITableView alloc]init];
+    self.tableView = tableView;
+    tableView.frame = self.view.bounds;
+    [self.view addSubview:tableView];
+    tableView.delegate = self;
+    tableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {

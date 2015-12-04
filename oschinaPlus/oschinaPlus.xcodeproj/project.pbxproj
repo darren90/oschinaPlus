@@ -37,6 +37,7 @@
 		FE309F431C108A7200B5FE0D /* AnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F421C108A7200B5FE0D /* AnswerModel.m */; };
 		FE309F461C11CC3800B5FE0D /* BBSDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F451C11CC3800B5FE0D /* BBSDetailController.m */; };
 		FE309F491C11D2B400B5FE0D /* PosterDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F481C11D2B400B5FE0D /* PosterDetailModel.m */; };
+		FE309F4C1C11E0C800B5FE0D /* BlogController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F4B1C11E0C800B5FE0D /* BlogController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,8 @@
 		FE309F451C11CC3800B5FE0D /* BBSDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSDetailController.m; sourceTree = "<group>"; };
 		FE309F471C11D2B400B5FE0D /* PosterDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterDetailModel.h; sourceTree = "<group>"; };
 		FE309F481C11D2B400B5FE0D /* PosterDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterDetailModel.m; sourceTree = "<group>"; };
+		FE309F4A1C11E0C800B5FE0D /* BlogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogController.h; sourceTree = "<group>"; };
+		FE309F4B1C11E0C800B5FE0D /* BlogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -436,6 +439,8 @@
 		FE309F111C098CAA00B5FE0D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FE309F4A1C11E0C800B5FE0D /* BlogController.h */,
+				FE309F4B1C11E0C800B5FE0D /* BlogController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -719,6 +724,7 @@
 				FE309F381C0F3AB800B5FE0D /* PostModel.m in Sources */,
 				FE309F061C0977BB00B5FE0D /* AFAppDotNetAPIClient.m in Sources */,
 				FE309F241C0999AC00B5FE0D /* ContentModel.m in Sources */,
+				FE309F4C1C11E0C800B5FE0D /* BlogController.m in Sources */,
 				FE309E7D1C094E5A00B5FE0D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
