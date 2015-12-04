@@ -14,38 +14,60 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="论述Swift与OC的关系" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL3-bQ-d1a">
-                        <rect key="frame" x="14" y="16" width="234" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="论述Swift与OC的关系" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JL3-bQ-d1a">
+                        <rect key="frame" x="10" y="10" width="300" height="21"/>
                         <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Zqr-4z-oO5"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="回复：2015年12月03日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Aa-mv-wFA">
-                        <rect key="frame" x="8" y="46" width="178" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="回复：2015年12月03日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Aa-mv-wFA">
+                        <rect key="frame" x="10" y="41" width="118" height="13.5"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Darren90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1P-NR-Ucs">
-                        <rect key="frame" x="132" y="45" width="73" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评论：30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oal-O4-RrE">
+                        <rect key="frame" x="263" y="41" width="47" height="13.5"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="评论：30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oal-O4-RrE">
-                        <rect key="frame" x="226" y="48" width="72" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Darren90" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1P-NR-Ucs">
+                        <rect key="frame" x="128" y="41" width="135" height="13.5"/>
                         <animations/>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <animations/>
+                <constraints>
+                    <constraint firstItem="JL3-bQ-d1a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8gJ-Xa-GQz"/>
+                    <constraint firstItem="l1P-NR-Ucs" firstAttribute="leading" secondItem="8Aa-mv-wFA" secondAttribute="trailing" id="Cfg-Ky-dwU"/>
+                    <constraint firstItem="oal-O4-RrE" firstAttribute="top" secondItem="JL3-bQ-d1a" secondAttribute="bottom" constant="10" id="FPX-dV-amB"/>
+                    <constraint firstItem="8Aa-mv-wFA" firstAttribute="top" secondItem="JL3-bQ-d1a" secondAttribute="bottom" constant="10" id="HhH-Rg-o1W"/>
+                    <constraint firstAttribute="trailing" secondItem="oal-O4-RrE" secondAttribute="trailing" constant="10" id="IZH-7y-T6m"/>
+                    <constraint firstItem="oal-O4-RrE" firstAttribute="leading" secondItem="l1P-NR-Ucs" secondAttribute="trailing" id="MPn-ie-ZeI"/>
+                    <constraint firstItem="l1P-NR-Ucs" firstAttribute="top" secondItem="8Aa-mv-wFA" secondAttribute="top" id="PD6-hq-GLh"/>
+                    <constraint firstItem="oal-O4-RrE" firstAttribute="top" secondItem="8Aa-mv-wFA" secondAttribute="top" id="XdQ-S2-qpq"/>
+                    <constraint firstItem="JL3-bQ-d1a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ich-ZW-NOv"/>
+                    <constraint firstAttribute="trailing" secondItem="JL3-bQ-d1a" secondAttribute="trailing" constant="10" id="zP2-Ge-cSC"/>
+                    <constraint firstItem="8Aa-mv-wFA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="zUM-1N-UsM"/>
+                </constraints>
             </tableViewCellContentView>
             <animations/>
+            <connections>
+                <outlet property="commentLabel" destination="oal-O4-RrE" id="rxf-YY-QKu"/>
+                <outlet property="lastPostNameLabel" destination="l1P-NR-Ucs" id="5U9-3a-yhp"/>
+                <outlet property="lastPosteTimeLabel" destination="8Aa-mv-wFA" id="t6I-ZB-l7g"/>
+                <outlet property="titleabel" destination="JL3-bQ-d1a" id="iG9-cw-vfL"/>
+            </connections>
             <point key="canvasLocation" x="322" y="400"/>
         </tableViewCell>
     </objects>

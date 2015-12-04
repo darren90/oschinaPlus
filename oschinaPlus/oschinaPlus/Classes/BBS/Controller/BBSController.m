@@ -26,6 +26,7 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView.rowHeight = 80;
     
     [self initData];
 }
@@ -48,7 +49,7 @@
     params[@"dataType"] = @"json";
     
     [AFNTool getWithURL:[NSString getUrlWithPort:KBBS] params:params success:^(id json) {
-        NSLog(@"--j:%@",json);
+//        NSLog(@"--j:%@",json);
         PostModel *poster = [PostModel mj_objectWithKeyValues:json];
         [self.dataArray addObjectsFromArray:poster.post_list];
         [self.tableView reloadData];
@@ -88,7 +89,6 @@
     }
     return _dataArray;
 }
-
 
 
 /*
