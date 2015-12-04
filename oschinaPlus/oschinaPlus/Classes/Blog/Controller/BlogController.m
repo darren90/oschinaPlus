@@ -11,6 +11,7 @@
 @interface BlogController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,weak)UITableView * tableView;
+@property (nonatomic,strong)NSMutableArray * dataArray;
 
 @end
 
@@ -53,6 +54,43 @@
     [self.view addSubview:tableView];
     tableView.delegate = self;
     tableView.dataSource = self;
+}
+
+
+#pragma mark - Table view data source
+
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    return 0;
+//}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 0;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    PosterCell *cell = [PosterCell cellWithTableView:tableView];
+//    cell.model = self.dataArray[indexPath.row];
+    
+    return nil;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    BBSDetailController *detailVC = [sb instantiateViewControllerWithIdentifier:@"bbsdetailvc"];
+//    PostContentModel *model = self.dataArray[indexPath.row];
+//    detailVC.poster_id = model.ID;
+//    [self.navigationController pushViewController:detailVC animated:YES];
+}
+
+
+-(NSMutableArray *)dataArray
+{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray array];
+    }
+    return _dataArray;
 }
 
 - (void)didReceiveMemoryWarning {

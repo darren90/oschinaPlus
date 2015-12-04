@@ -20,7 +20,7 @@
 #define KNew_Detail         @"news_detail"
 #define KBBS                @"post_list"
 #define KBBS_Detail         @"post_detail"//帖子详情
-#define KBlog_Detail         @"blog_list"//博客列表
+#define KBlog_Detail        @"blog_list"//博客列表
 
 
 //应用ID	vAdtOo4xaeocczPzRBK8
