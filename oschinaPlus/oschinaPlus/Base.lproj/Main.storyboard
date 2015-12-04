@@ -108,10 +108,33 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="sfA-tF-dP7"/>
+                    <connections>
+                        <segue destination="nr4-ec-yMj" kind="push" identifier="bbsdetail" id="jE9-6W-mWf"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ygc-rm-yfS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="289" y="508"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="Y0a-dE-vsI">
+            <objects>
+                <viewController storyboardIdentifier="bbsdetailvc" id="nr4-ec-yMj" customClass="BBSDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aG8-DN-PDq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ryh-kD-Zof"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X1N-Yb-bvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6dg-DI-p6U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KFb-yK-nar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="517"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="S4L-CA-T3L">

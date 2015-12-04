@@ -19,6 +19,7 @@
 #define KNews               @"news_list"
 #define KNew_Detail         @"news_detail"
 #define KBBS                @"post_list"
+#define KBBS_Detail         @"post_detail"//帖子详情
 
 
 //应用ID	vAdtOo4xaeocczPzRBK8

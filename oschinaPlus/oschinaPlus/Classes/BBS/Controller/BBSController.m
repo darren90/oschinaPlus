@@ -10,6 +10,7 @@
 #import "PostModel.h"
 #import "PostContentModel.h"
 #import "PosterCell.h"
+#import "BBSDetailController.h"
 
 @interface BBSController ()
 @property (nonatomic,strong)NSMutableArray * dataArray;
@@ -79,6 +80,15 @@
     cell.model = self.dataArray[indexPath.row];
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BBSDetailController *detailVC = [sb instantiateViewControllerWithIdentifier:@"bbsdetailvc"];
+    PostContentModel *model = self.dataArray[indexPath.row];
+    detailVC.poster_id = model.ID;
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 

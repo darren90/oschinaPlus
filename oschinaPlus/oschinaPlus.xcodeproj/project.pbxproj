@@ -35,6 +35,8 @@
 		FE309F3F1C0F431600B5FE0D /* PosterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F3D1C0F431600B5FE0D /* PosterCell.m */; };
 		FE309F401C0F431600B5FE0D /* PosterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE309F3E1C0F431600B5FE0D /* PosterCell.xib */; };
 		FE309F431C108A7200B5FE0D /* AnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F421C108A7200B5FE0D /* AnswerModel.m */; };
+		FE309F461C11CC3800B5FE0D /* BBSDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F451C11CC3800B5FE0D /* BBSDetailController.m */; };
+		FE309F491C11D2B400B5FE0D /* PosterDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F481C11D2B400B5FE0D /* PosterDetailModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +113,10 @@
 		FE309F3E1C0F431600B5FE0D /* PosterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PosterCell.xib; sourceTree = "<group>"; };
 		FE309F411C108A7100B5FE0D /* AnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerModel.h; sourceTree = "<group>"; };
 		FE309F421C108A7200B5FE0D /* AnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerModel.m; sourceTree = "<group>"; };
+		FE309F441C11CC3800B5FE0D /* BBSDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSDetailController.h; sourceTree = "<group>"; };
+		FE309F451C11CC3800B5FE0D /* BBSDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSDetailController.m; sourceTree = "<group>"; };
+		FE309F471C11D2B400B5FE0D /* PosterDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PosterDetailModel.h; sourceTree = "<group>"; };
+		FE309F481C11D2B400B5FE0D /* PosterDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PosterDetailModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -386,6 +392,8 @@
 			children = (
 				FE309F331C0F388B00B5FE0D /* BBSController.h */,
 				FE309F341C0F388B00B5FE0D /* BBSController.m */,
+				FE309F441C11CC3800B5FE0D /* BBSDetailController.h */,
+				FE309F451C11CC3800B5FE0D /* BBSDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -399,6 +407,8 @@
 				FE309F3A1C0F3AD100B5FE0D /* PostContentModel.m */,
 				FE309F411C108A7100B5FE0D /* AnswerModel.h */,
 				FE309F421C108A7200B5FE0D /* AnswerModel.m */,
+				FE309F471C11D2B400B5FE0D /* PosterDetailModel.h */,
+				FE309F481C11D2B400B5FE0D /* PosterDetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -689,6 +699,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE309F211C0998D800B5FE0D /* NewsModel.m in Sources */,
+				FE309F461C11CC3800B5FE0D /* BBSDetailController.m in Sources */,
 				FE309F321C0B17BC00B5FE0D /* MeController.m in Sources */,
 				FE309E831C094E5A00B5FE0D /* ViewController.m in Sources */,
 				FE309F0B1C0988DE00B5FE0D /* Account.m in Sources */,
@@ -696,6 +707,7 @@
 				FE309F431C108A7200B5FE0D /* AnswerModel.m in Sources */,
 				FE309F351C0F388B00B5FE0D /* BBSController.m in Sources */,
 				FE309F271C09A18D00B5FE0D /* NoticeModel.m in Sources */,
+				FE309F491C11D2B400B5FE0D /* PosterDetailModel.m in Sources */,
 				FE309F081C0977BB00B5FE0D /* NSString+NET.m in Sources */,
 				FE309F071C0977BB00B5FE0D /* AFNTool.m in Sources */,
 				FE309F3B1C0F3AD100B5FE0D /* PostContentModel.m in Sources */,
