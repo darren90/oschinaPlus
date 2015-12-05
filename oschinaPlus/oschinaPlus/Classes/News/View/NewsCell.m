@@ -8,6 +8,7 @@
 
 #import "NewsCell.h"
 #import "ContentModel.h"
+#import "BlogContentModel.h"
 
 @interface NewsCell()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -42,6 +43,16 @@
     self.replayLabel.text = [NSString stringWithFormat:@"评论：%@",model.commentCount];
     self.authorLabel.text = model.author;
     self.timeLabel.text = model.pubDate;
+}
+
+-(void)setBlogContentModel:(BlogContentModel *)blogContentModel
+{
+    _blogContentModel = blogContentModel;
+    
+    self.titleLabel.text = blogContentModel.title;
+    self.replayLabel.text = [NSString stringWithFormat:@"评论：%@",blogContentModel.commentCount];
+    self.authorLabel.text = blogContentModel.author;
+    self.timeLabel.text = blogContentModel.pubDate;
 }
 
 

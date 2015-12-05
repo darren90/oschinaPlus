@@ -40,6 +40,7 @@
 		FE309F4C1C11E0C800B5FE0D /* BlogController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F4B1C11E0C800B5FE0D /* BlogController.m */; };
 		FE309F4F1C1286F000B5FE0D /* BlogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F4E1C1286F000B5FE0D /* BlogModel.m */; };
 		FE309F521C12908A00B5FE0D /* BlogContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F511C12908A00B5FE0D /* BlogContentModel.m */; };
+		FE309F551C12A84600B5FE0D /* BlogDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F541C12A84600B5FE0D /* BlogDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +127,8 @@
 		FE309F4E1C1286F000B5FE0D /* BlogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogModel.m; sourceTree = "<group>"; };
 		FE309F501C12908A00B5FE0D /* BlogContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogContentModel.h; sourceTree = "<group>"; };
 		FE309F511C12908A00B5FE0D /* BlogContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogContentModel.m; sourceTree = "<group>"; };
+		FE309F531C12A84600B5FE0D /* BlogDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailController.h; sourceTree = "<group>"; };
+		FE309F541C12A84600B5FE0D /* BlogDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -447,6 +450,8 @@
 			children = (
 				FE309F4A1C11E0C800B5FE0D /* BlogController.h */,
 				FE309F4B1C11E0C800B5FE0D /* BlogController.m */,
+				FE309F531C12A84600B5FE0D /* BlogDetailController.h */,
+				FE309F541C12A84600B5FE0D /* BlogDetailController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -727,6 +732,7 @@
 				FE309F491C11D2B400B5FE0D /* PosterDetailModel.m in Sources */,
 				FE309F081C0977BB00B5FE0D /* NSString+NET.m in Sources */,
 				FE309F071C0977BB00B5FE0D /* AFNTool.m in Sources */,
+				FE309F551C12A84600B5FE0D /* BlogDetailController.m in Sources */,
 				FE309F3B1C0F3AD100B5FE0D /* PostContentModel.m in Sources */,
 				FE309F2B1C09A39300B5FE0D /* NewsCell.m in Sources */,
 				FE309F1E1C098CC100B5FE0D /* NewsController.m in Sources */,

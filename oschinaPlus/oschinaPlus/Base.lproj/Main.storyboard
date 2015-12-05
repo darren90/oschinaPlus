@@ -219,10 +219,33 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="博客" id="ZHk-lf-E3L"/>
+                    <connections>
+                        <segue destination="1vN-tX-MIA" kind="push" identifier="blogdetail" id="SMX-pB-WdX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o15-ID-bba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="289" y="1159"/>
+        </scene>
+        <!--Blog Detail Controller-->
+        <scene sceneID="GHf-y0-9k5">
+            <objects>
+                <viewController storyboardIdentifier="blogdetailvc" id="1vN-tX-MIA" customClass="BlogDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ld1-pi-AVc"/>
+                        <viewControllerLayoutGuide type="bottom" id="LcO-27-YQA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HOJ-Jz-Ibn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="peb-0n-9f0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYe-jG-8EB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="1152"/>
         </scene>
         <!--论坛-->
         <scene sceneID="t4C-mV-B4d">

@@ -11,7 +11,7 @@
 @implementation BlogModel
 + (NSDictionary *)objectClassInArray{
     
-    return @{ @"post_list" : @"PostContentModel"};
+    return @{ @"bloglist" : @"BlogContentModel"};
 }
 
 @end

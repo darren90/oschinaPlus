@@ -1,25 +1,22 @@
 //
-//  BlogController.m
+//  BlogDetailController.m
 //  oschinaPlus
 //
-//  Created by Tengfei on 15/12/4.
+//  Created by Tengfei on 15/12/5.
 //  Copyright © 2015年 tengfei. All rights reserved.
 //
 
-#import "BlogController.h"
-#import "BlogModel.h"
-#import "BlogContentModel.h"
-#import "NewsCell.h"
 #import "BlogDetailController.h"
 
-@interface BlogController ()<UITableViewDelegate,UITableViewDataSource>
+@interface BlogDetailController ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,weak)UITableView * tableView;
-@property (nonatomic,strong)NSMutableArray * dataArray;
+@property (nonatomic,weak)UITableView *tableView;
+
+@property (nonatomic,strong)NSMutableArray *dataArray;
 
 @end
 
-@implementation BlogController
+@implementation BlogDetailController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,26 +27,25 @@
 
 -(void)initData
 {
-//    access_token	true	string	oauth2_token获取的access_token
-//    page/pageIndex	true	int	页数	1
-//    pageSize	true	int	每页条数	20
-//    dataType	true	string	返回数据类型['json'|'jsonp'|'xml']	json
+//    id	true	long	博客编号	空
+//    access_token	false	string	oauth2_token获取的access_token 传则显示是否收藏 用户未登录则不传
+//    dataType	false	string	返回数据类型 ['json'|'jsonp'|'xml']	json
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"access_token"] = @"1fe2defc-c009-4f06-bfce-03ef5c9389a7";
-    params[@"page"] = @(1);
-    params[@"pageSize"] = @(20);
+    params[@"id"] = self.blog_id;
     params[@"dataType"] = @"json";
     
-    [AFNTool getWithURL:[NSString getUrlWithPort:KBlog] params:params success:^(id json) {
+    [AFNTool getWithURL:[NSString getUrlWithPort:KBlog_Detail] params:params success:^(id json) {
         NSLog(@"--j:%@",json);
-        BlogModel *model = [BlogModel mj_objectWithKeyValues:json];
-        [self.dataArray addObjectsFromArray:model.bloglist];
-        [self.tableView reloadData];
+//        BlogModel *model = [BlogModel mj_objectWithKeyValues:json];
+//        [self.dataArray addObjectsFromArray:model.bloglist];
+//        [self.tableView reloadData];
     } failure:^(NSError *error) {
         NSLog(@"--eee:%@",error);
     }];
 }
+
 
 -(void)initTableView
 {
@@ -63,24 +59,25 @@
 }
 
 
+
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.dataArray.count;
+    return 0;//self.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NewsCell *cell = [NewsCell cellWithTableView:tableView];
-    cell.blogContentModel = self.dataArray[indexPath.row];
-    return cell;
+//    NewsCell *cell = [NewsCell cellWithTableView:tableView];
+//    cell.blogContentModel = self.dataArray[indexPath.row];
+    return nil;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    BlogDetailController *detailVc = [sb instantiateViewControllerWithIdentifier:@"blogdetailvc"];
-    BlogContentModel *model = self.dataArray[indexPath.row];
-    detailVc.blog_id = model.ID;
-    [self.navigationController pushViewController:detailVc animated:YES];
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    BlogDetailController *detailVc = [sb instantiateViewControllerWithIdentifier:@"blogdetailvc"];
+//    BlogContentModel *model = self.dataArray[indexPath.row];
+//    detailVc.blog_id = model.ID;
+//    [self.navigationController pushViewController:detailVc animated:YES];
 }
 
 
@@ -93,10 +90,6 @@
     return _dataArray;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 /*
 #pragma mark - Navigation
