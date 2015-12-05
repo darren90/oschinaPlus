@@ -41,6 +41,7 @@
 		FE309F4F1C1286F000B5FE0D /* BlogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F4E1C1286F000B5FE0D /* BlogModel.m */; };
 		FE309F521C12908A00B5FE0D /* BlogContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F511C12908A00B5FE0D /* BlogContentModel.m */; };
 		FE309F551C12A84600B5FE0D /* BlogDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F541C12A84600B5FE0D /* BlogDetailController.m */; };
+		FE309F581C12AB9000B5FE0D /* BlogDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE309F571C12AB9000B5FE0D /* BlogDetailModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +130,8 @@
 		FE309F511C12908A00B5FE0D /* BlogContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogContentModel.m; sourceTree = "<group>"; };
 		FE309F531C12A84600B5FE0D /* BlogDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailController.h; sourceTree = "<group>"; };
 		FE309F541C12A84600B5FE0D /* BlogDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailController.m; sourceTree = "<group>"; };
+		FE309F561C12AB9000B5FE0D /* BlogDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogDetailModel.h; sourceTree = "<group>"; };
+		FE309F571C12AB9000B5FE0D /* BlogDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogDetailModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,6 +466,8 @@
 				FE309F4E1C1286F000B5FE0D /* BlogModel.m */,
 				FE309F501C12908A00B5FE0D /* BlogContentModel.h */,
 				FE309F511C12908A00B5FE0D /* BlogContentModel.m */,
+				FE309F561C12AB9000B5FE0D /* BlogDetailModel.h */,
+				FE309F571C12AB9000B5FE0D /* BlogDetailModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -743,6 +748,7 @@
 				FE309F061C0977BB00B5FE0D /* AFAppDotNetAPIClient.m in Sources */,
 				FE309F241C0999AC00B5FE0D /* ContentModel.m in Sources */,
 				FE309F4C1C11E0C800B5FE0D /* BlogController.m in Sources */,
+				FE309F581C12AB9000B5FE0D /* BlogDetailModel.m in Sources */,
 				FE309E7D1C094E5A00B5FE0D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
