@@ -43,7 +43,7 @@
 //    dataType	true	string	返回数据类型['json'|'jsonp'|'xml']	json
 
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"access_token"] = @"1fe2defc-c009-4f06-bfce-03ef5c9389a7";
+    params[@"access_token"] = K_Token;
 //    params[@"catalog"] = @(1);
     params[@"page"] = @(1);
     params[@"pageSize"] = @(20);

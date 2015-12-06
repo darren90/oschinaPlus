@@ -896,7 +896,7 @@
 				INFOPLIST_FILE = oschinaPlus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.oschinaPlus.oschinaPlus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.oschinaPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -909,7 +909,7 @@
 				INFOPLIST_FILE = oschinaPlus/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.oschinaPlus.oschinaPlus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ftf.oschinaPlus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

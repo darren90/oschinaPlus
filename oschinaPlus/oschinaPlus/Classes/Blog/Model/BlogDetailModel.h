@@ -42,21 +42,15 @@
 //notice.fansCount	int	新增粉丝数
 //notice.referCount	int	未读@我数
 
-
 @property (nonatomic,copy)NSString * ID;
-
 
 @property (nonatomic,copy)NSString * title;
 
-
 @property (nonatomic,copy)NSString * body;
-
 
 @property (nonatomic,copy)NSString * pubDate;
 
-
 @property (nonatomic,copy)NSString * authorid;
-
 
 @property (nonatomic,assign)int favorite;
 
@@ -64,9 +58,19 @@
 
 @property (nonatomic,copy)NSString * url;
 
-
 @property (nonatomic,strong)NoticeModel * notice;
 
 
 
 @end
+
+
+
+
+
+
+
+
+
+
+

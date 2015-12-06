@@ -23,12 +23,15 @@
 #define KBlog               @"blog_list"//博客列表
 #define KBlog_Detail        @"blog_detail"
 
+
+#define K_Token @"75610b0c-5766-4824-a6b4-b426bf2f3f2e"
+
 //应用ID	vAdtOo4xaeocczPzRBK8
 //应用私钥	XMNbCC0CYSv7qpdJoMQXwzHUxmCHECOH重置
 //应用首页	http://my.oschina.net/fengtengfei/blog
 //回调地址	http://my.oschina.net/fengtengfei/blog
 #define KOSCAPPID  @"vAdtOo4xaeocczPzRBK8"
-#define KOSCAPPKey  @"XMNbCC0CYSv7qpdJoMQXwzHUxmCHECOH"
+#define KOSCAPPKey  @"BMAKOKIMjIuKKE29F98WX3tekbG9MPwN"
 #define KOSCAPPHomePage  @"http://my.oschina.net/fengtengfei/blog"
 #define KOSCRedirectUri  @"http://my.oschina.net/fengtengfei/blog"
 
